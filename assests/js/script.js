@@ -53,7 +53,7 @@ function(){
 
 // <!-- typed js effect starts -->
     var typed = new Typed(".typing-text", {
-        strings: ["Cyber Security Specialist", "Pentester", "Fal Uzmanı", "Aşko"],
+        strings: ["Cyber Security Specialist", "Pentester", "Fal Uzmanı", "Aşko Kuşko"],
         loop: true,
         typeSpeed: 50,
 		backSpeed: 25,
