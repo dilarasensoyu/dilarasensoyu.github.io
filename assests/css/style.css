@@ -71,7 +71,7 @@ header{
 }
 
 section{
-  min-height:auto;
+  min-height:100vh;
   padding: 2rem 9%;
 }
 
