@@ -100,54 +100,6 @@ siber güvenlik ilgilisiyim.Ankara Üniversitesi Matematik Bölümü son sınıf
     </div>
 </section>
 <!-- about section ends -->
-<!-- Add this HTML to your webpage where you want to display the blog posts -->
-<section class="blog" id="blog">
-  <h2 class="heading"><i class="fas fa-blog"></i> Blog</h2>
-  <div class="blog-container" id="blog-container">
-    <!-- Blog posts will be dynamically added here -->
-  </div>
-</section>
-
-<!-- Add this JavaScript code to your webpage to fetch and display Medium blog posts -->
-<script>
-$(document).ready(function() {
-  // Define your Medium RSS feed URL
-  const mediumRssFeed = 'https://dilarasensoyu.medium.com/';
-
-  // Fetch the RSS feed
-  $.ajax(mediumRssFeed, {
-    accepts: {
-      xml: 'application/rss+xml',
-    },
-    dataType: 'xml',
-    success: function(data) {
-      // Parse the RSS feed
-      const $xml = $(data);
-      const $items = $xml.find('item');
-
-      // Loop through the blog posts
-      $items.each(function() {
-        const $item = $(this);
-        const title = $item.find('title').text();
-        const link = $item.find('link').text();
-
-        // Create a blog post element and append it to the container
-        const postElement = `
-          <div class="blog-post">
-            <h3><a href="${link}" target="_blank">${title}</a></h3>
-          </div>
-        `;
-        $('#blog-container').append(postElement);
-      });
-    },
-    error: function() {
-      // Handle errors
-      console.error('Failed to fetch Medium blog posts.');
-    },
-  });
-});
-</script>
-
 
 <!-- skills section starts -->
 <section class="skills" id="skills" style="max-height: 70vh;">
