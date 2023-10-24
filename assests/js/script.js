@@ -42,11 +42,11 @@ document.addEventListener('visibilitychange',
 function(){
     if(document.visibilityState === "visible"){
         document.title = "Dilara Şensoyu";
-        $("#favicon").attr("href","assests/images/hero.jpg");
+        $("#favicon").attr("href","assests/images/hero.jpeg");
     }
     else {
         document.title = "Sayfama Hoşgeldiniz";
-        $("#favicon").attr("href","assests/images/hero.jpg");
+        $("#favicon").attr("href","assests/images/hero.jpeg");
     }
 });
 
@@ -129,7 +129,7 @@ srtop.reveal('.contact .container',{delay: 400});
 srtop.reveal('.contact .container .form-group',{delay: 400});
 
 // RSS beslemesinin URL'si (Medium kullanıcı adınızı burada değiştirin)
-const rssFeedUrl = 'https://dijitaleskiya.medium.com/feed'; 
+const rssFeedUrl = 'https://medium.com/feed/@dilarasensoyu'; 
 
 // RSS beslemesini çekme işlemi
 fetch(`https://api.rss2json.com/v1/api.json?rss_url=${rssFeedUrl}`)
