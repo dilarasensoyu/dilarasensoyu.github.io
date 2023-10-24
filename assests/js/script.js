@@ -127,3 +127,34 @@ srtop.reveal('.experience .timeline .container',{interval: 400});
 /* SCROLL CONTACT */
 srtop.reveal('.contact .container',{delay: 400});
 srtop.reveal('.contact .container .form-group',{delay: 400});
+
+// RSS beslemesinin URL'si (Medium kullanıcı adınızı burada değiştirin)
+const rssFeedUrl = 'https://dijitaleskiya.medium.com/feed'; 
+
+// RSS beslemesini çekme işlemi
+fetch(`https://api.rss2json.com/v1/api.json?rss_url=${rssFeedUrl}`)
+    .then(response => response.json())
+    .then(data => {
+        const yazilar = data.items.slice(0, 6); // İlk 8 yazıyı al
+        // Her bir yazı için liste öğesi oluşturma ve sayfaya eklemek
+        yazilar.forEach(yazi => {
+            const baslik = yazi.title;
+            const link = yazi.link;
+
+            const yazilarDiv = document.getElementById('medium-yazilari');
+            const yeniYazi = document.createElement('div');
+            yeniYazi.classList.add('medium-yazi');
+
+            const p = document.createElement('p');
+            p.classList.add('yazi-baslik');
+
+            const a = document.createElement('a');
+            a.href = link;
+            a.target = '_blank';
+            a.textContent = baslik;
+
+            p.appendChild(a);
+            yeniYazi.appendChild(p);
+            yazilarDiv.appendChild(yeniYazi);
+        });
+    });
