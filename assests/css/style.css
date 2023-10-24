@@ -995,43 +995,43 @@ buradan arka plan rengini değiştirebilirsin
   border-radius: 4px;
 }
 
-.skills .container .col .bar .java:before {
-  width: 80%;
-  background: #ffd900;
-}
-
-.skills .container .col .bar .react:before {
-  width: 60%;
-  background: #f38b03;
-}
-
-.skills .container .col .bar .network:before {
+.skills .container .col .bar .hacking:before {
   width: 70%;
   background: #ffd900;
 }
 
-.skills .container .col .bar .sql:before {
-  width: 75%;
+.skills .container .col .bar .cryptography:before {
+  width: 60%;
+  background: #f38b03;
+}
+
+.skills .container .col .bar .threat:before {
+  width: 60%;
+  background: #ffd900;
+}
+
+.skills .container .col .bar .penTesting:before {
+  width: 60%;
   background: #f38b03;
 }
 
 .skills .container .col .bar .linux:before {
-  width: 60%;
+  width: 50%;
   background: #f38b03;
 }
 
-.skills .container .col .bar .c:before {
-  width: 55%;
+.skills .container .col .bar .database:before {
+  width: 60%;
   background: #ffd900;
 }
 
-.skills .container .col .bar .clean:before {
+.skills .container .col .bar .incident:before {
   width: 60%;
   background: #f38b03;
 }
 
-.skills .container .col .bar .ney:before {
-  width: 80%;
+.skills .container .col .bar .auditing:before {
+  width: 60%;
   background: #ffd900;
 }
 
