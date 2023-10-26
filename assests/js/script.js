@@ -158,3 +158,11 @@ fetch(`https://api.rss2json.com/v1/api.json?rss_url=${rssFeedUrl}`)
             yazilarDiv.appendChild(yeniYazi);
         });
     });
+//müzik eklentisi
+    document.addEventListener("DOMContentLoaded", function() {
+      let player = document.getElementById("player");
+      let playButton = document.getElementById("playButton");
+      playButton.addEventListener("click", function() {
+        player.play();
+      });
+    });
