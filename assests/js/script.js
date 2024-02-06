@@ -42,11 +42,11 @@ document.addEventListener('visibilitychange',
 function(){
     if(document.visibilityState === "visible"){
         document.title = "Dilara Şensoyu";
-        $("#favicon").attr("href","assests/images/hero.jpeg");
+        $("#favicon").attr("href","assests/images/hero.jpg");
     }
     else {
         document.title = "Sayfama Hoşgeldiniz";
-        $("#favicon").attr("href","assests/images/hero.jpeg");
+        $("#favicon").attr("href","assests/images/hero.jpg");
     }
 });
 
