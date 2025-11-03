@@ -577,6 +577,47 @@ header .navbar ul li a:hover{
   background: var(--cyan-light);
 }
 
+/* Beceriler yüzde çubukları - eksik sınıflar */
+.skills .container .col .bar .line.dataAnalysis::before {
+  width: 70%;
+  background: var(--cyan-light);
+}
+
+.skills .container .col .bar .line.ml::before {
+  width: 60%;
+  background: var(--blue-primary);
+}
+
+.skills .container .col .bar .line.viz::before {
+  width: 60%;
+  background: var(--cyan-light);
+}
+
+.skills .container .col .bar .line.python::before {
+  width: 60%;
+  background: var(--blue-primary);
+}
+
+.skills .container .col .bar .line.stats::before {
+  width: 50%;
+  background: var(--cyan-light);
+}
+
+.skills .container .col .bar .line.dl::before {
+  width: 60%;
+  background: var(--blue-primary);
+}
+
+.skills .container .col .bar .line.cleaning::before {
+  width: 60%;
+  background: var(--cyan-light);
+}
+
+.skills .container .col .bar .line.evaluation::before {
+  width: 60%;
+  background: var(--blue-primary);
+}
+
 /* skills media queries starts*/
 @media screen and (max-width: 600px){
   .skills .container{
