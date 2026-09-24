@@ -509,7 +509,7 @@ header .navbar ul li a:hover{
 .skills .container .col .bar .info{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin-bottom: 5px;
 }
 .skills .container .col .bar .info i{
@@ -577,44 +577,44 @@ header .navbar ul li a:hover{
   background: var(--cyan-light);
 }
 
-/* Beceriler yüzde çubukları - eksik sınıflar */
+/* skills progress bar widths (percentages in CSS only) */
+.skills .container .col .bar .line.performanceMarketing::before {
+  width: 75%;
+  background: var(--cyan-light);
+}
+
+.skills .container .col .bar .line.userAcquisition::before {
+  width: 70%;
+  background: var(--blue-primary);
+}
+
+.skills .container .col .bar .line.marketingAnalytics::before {
+  width: 75%;
+  background: var(--cyan-light);
+}
+
+.skills .container .col .bar .line.funnelAnalysis::before {
+  width: 70%;
+  background: var(--blue-primary);
+}
+
 .skills .container .col .bar .line.dataAnalysis::before {
   width: 70%;
   background: var(--cyan-light);
 }
 
-.skills .container .col .bar .line.ml::before {
-  width: 60%;
+.skills .container .col .bar .line.dataVisualization::before {
+  width: 65%;
   background: var(--blue-primary);
 }
 
-.skills .container .col .bar .line.viz::before {
-  width: 60%;
-  background: var(--cyan-light);
+.skills .container .col .bar .line.experimentation::before {
+  width: 70%;
+  background: var(--blue-primary);
 }
 
 .skills .container .col .bar .line.python::before {
-  width: 60%;
-  background: var(--blue-primary);
-}
-
-.skills .container .col .bar .line.stats::before {
-  width: 50%;
-  background: var(--cyan-light);
-}
-
-.skills .container .col .bar .line.dl::before {
-  width: 60%;
-  background: var(--blue-primary);
-}
-
-.skills .container .col .bar .line.cleaning::before {
-  width: 60%;
-  background: var(--cyan-light);
-}
-
-.skills .container .col .bar .line.evaluation::before {
-  width: 60%;
+  width: 65%;
   background: var(--blue-primary);
 }
 

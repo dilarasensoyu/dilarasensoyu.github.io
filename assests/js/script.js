@@ -53,7 +53,12 @@ function(){
 
 // <!-- typed js effect starts -->
     var typed = new Typed(".typing-text", {
-        strings: ["Data Analyst" , "Machine Learning Enthusiast"],
+        strings: [
+            "Performance Marketing Specialist",
+            "User Acquisition Specialist",
+            "Data Analytics Specialist",
+            "Growth & Marketing Analytics"
+        ],
         loop: true,
         typeSpeed: 50,
 		backSpeed: 25,
